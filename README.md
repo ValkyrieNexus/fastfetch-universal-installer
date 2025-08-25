@@ -137,7 +137,7 @@ Run the included validator to check script integrity:
 
 ```bash
 # Download and run validator
-wget https://raw.githubusercontent.com/[your-username]/[your-repo]/main/validate-fastfetch-installer.sh
+wget https://raw.githubusercontent.com/ValkyrieNexux/fastfetch-universal-installer/main/validate-fastfetch-installer.sh
 chmod +x validate-fastfetch-installer.sh
 ./validate-fastfetch-installer.sh
 ```
