@@ -1,23 +1,23 @@
-# 🚀 Universal Fastfetch Installer
+# Universal Fastfetch Installer
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
 [![Linux](https://img.shields.io/badge/Platform-Linux-blue.svg)](https://www.linux.org/)
 [![Tested](https://img.shields.io/badge/Tested-100%25-brightgreen.svg)](#validation)
 
-A comprehensive, universal installer script that automatically detects your Linux distribution and installs [Fastfetch](https://github.com/fastfetch-cli/fastfetch) with optimal configuration and auto-launch setup.
+A universal installer script that detects your Linux distribution and installs [Fastfetch](https://github.com/fastfetch-cli/fastfetch) with distribution-specific configuration and auto-launch setup.
 
-## ✨ Features
+## Features
 
-- 🔍 **Auto-Detection**: Automatically detects Linux distribution and version
-- 📦 **Universal Support**: Works across major Linux distributions
-- 🎨 **Custom Themes**: Distribution-specific configurations (Kali dragon theme, Arch blue theme, etc.)
-- 🐚 **Multi-Shell**: Configures Bash, Zsh, and Fish shells automatically
-- 🔄 **Fallback Methods**: Multiple installation methods for maximum compatibility
-- 🛡️ **Security**: Built-in safety checks and error handling
-- 🎯 **Zero Configuration**: Works out of the box with sensible defaults
+- Auto-detection of Linux distribution and version
+- Support across major Linux distributions
+- Distribution-specific configurations (Kali dragon theme, Arch blue theme, etc.)
+- Configures Bash, Zsh, and Fish shells automatically
+- Multiple installation methods for compatibility
+- Built-in safety checks and error handling
+- Works out of the box with sensible defaults
 
-## 🐧 Supported Distributions
+## Supported Distributions
 
 ### Primary Support
 - **Debian-based**: Debian, Ubuntu, Linux Mint, Pop!_OS, Elementary OS, Kali Linux, Parrot OS
@@ -26,11 +26,11 @@ A comprehensive, universal installer script that automatically detects your Linu
 - **SUSE-based**: openSUSE (Leap/Tumbleweed), SLES
 
 ### Installation Methods
-1. **Official Repositories** (preferred)
-2. **AUR** (Arch User Repository) - for Arch-based systems
-3. **GitHub Releases** (fallback) - latest official releases
+1. Official repositories (preferred)
+2. AUR (Arch User Repository) - for Arch-based systems
+3. GitHub releases (fallback) - latest official releases
 
-## 🚀 Quick Start
+## Quick Start
 
 ### One-Line Installation
 
@@ -51,58 +51,58 @@ chmod +x install-fastfetch-universal.sh
 ./install-fastfetch-universal.sh
 ```
 
-## 📋 What It Does
+## What It Does
 
-1. **🔍 Detection Phase**
+1. **Detection phase**
    - Detects your Linux distribution and version
    - Identifies available package managers
    - Checks system compatibility
 
-2. **📦 Installation Phase**  
+2. **Installation phase**  
    - Attempts installation from official repositories
    - Falls back to AUR (Arch systems) or GitHub releases
    - Verifies successful installation
 
-3. **⚙️ Configuration Phase**
+3. **Configuration phase**
    - Configures shell startup files (.bashrc, .zshrc, fish config)
    - Creates distribution-specific Fastfetch themes
    - Sets up auto-launch on terminal startup
 
-4. **✅ Verification Phase**
+4. **Verification phase**
    - Confirms Fastfetch is properly installed
    - Tests configuration validity
    - Provides usage instructions
 
-## 🎨 Distribution-Specific Themes
+## Distribution-Specific Themes
 
-### 🐉 Kali Linux Theme
+### Kali Linux Theme
 - Custom dragon logo with blue/white color scheme
 - Security-focused module layout
 - Network information display
 - Penetration testing branding
 
-### 🔵 Arch Linux Theme  
+### Arch Linux Theme  
 - Minimalist Arch logo
 - Blue color accent theme
-- Performance-optimized module selection
+- Performance-oriented module selection
 - Clean, technical aesthetic
 
-### 🌍 Universal Theme
+### Universal Theme
 - Auto-detects appropriate logo
 - Balanced module selection
 - Compatible with any distribution
 - Sensible defaults for all systems
 
-## 🛡️ Security Features
+## Security Features
 
-- ✅ **Root Prevention**: Refuses to run as root user
-- ✅ **Input Validation**: Validates all user inputs and system responses
-- ✅ **Error Handling**: Comprehensive error handling with `set -e`
-- ✅ **Secure Downloads**: Verifies download integrity
-- ✅ **Cleanup**: Automatic temporary file cleanup
-- ✅ **No Pipe Execution**: Avoids dangerous pipe-to-bash patterns
+- **Root prevention**: Refuses to run as root user
+- **Input validation**: Validates user inputs and system responses
+- **Error handling**: Uses `set -e` for error handling
+- **Secure downloads**: Verifies download integrity
+- **Cleanup**: Automatic temporary file cleanup
+- **No pipe execution**: Avoids pipe-to-bash patterns
 
-## 🔧 Advanced Usage
+## Advanced Usage
 
 ### Custom Configuration
 
@@ -142,18 +142,18 @@ chmod +x validate-fastfetch-installer.sh
 ./validate-fastfetch-installer.sh
 ```
 
-## 🧪 Validation Results
+## Validation Results
 
-The installer has been thoroughly tested and passes **100% of validation checks**:
+The included validator covers:
 
-- ✅ **12/12 Security Tests** - Root prevention, error handling, cleanup
-- ✅ **Function Validation** - All core functions present and working  
-- ✅ **Distribution Support** - Comprehensive distro detection and support
-- ✅ **Package Manager Support** - apt, pacman, dnf, yum, zypper
-- ✅ **Shell Configuration** - Bash, Zsh, Fish support
-- ✅ **Syntax Validation** - Clean, error-free bash syntax
+- Security tests - root prevention, error handling, cleanup
+- Function validation - core functions present and working  
+- Distribution support - distro detection and support
+- Package manager support - apt, pacman, dnf, yum, zypper
+- Shell configuration - Bash, Zsh, Fish support
+- Syntax validation - bash syntax check
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 ├── install-fastfetch-universal.sh    # Main universal installer
@@ -164,7 +164,7 @@ The installer has been thoroughly tested and passes **100% of validation checks*
 └── README.md                         # This file
 ```
 
-## 🛠️ Development
+## Development
 
 ### Requirements
 - Bash 4.0+
@@ -185,17 +185,7 @@ docker run -it archlinux:latest bash
 docker run -it fedora:latest bash
 ```
 
-## 📊 Statistics
-
-- **📄 Lines of Code**: 463
-- **⚙️ Functions**: 13
-- **💬 Comments**: 32  
-- **📦 File Size**: ~14KB
-- **🎯 Test Coverage**: 100%
-- **🐧 Distributions Supported**: 15+
-- **🐚 Shells Supported**: 3 (Bash, Zsh, Fish)
-
-## ❓ FAQ
+## FAQ
 
 **Q: Does this work on all Linux distributions?**  
 A: The script supports all major Linux distributions. For unsupported distributions, it attempts to use the closest compatible method based on the `ID_LIKE` field.
@@ -212,9 +202,9 @@ A: The script includes multiple fallback methods. Check the error output, and yo
 **Q: How do I uninstall?**  
 A: Use your distribution's package manager to remove Fastfetch, and remove the configuration lines from your shell startup files.
 
-## 🤝 Contributing
+## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+Contributions are welcome. Please feel free to submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
 ### Areas for Contribution
 - Additional distribution support
@@ -223,28 +213,18 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 - Bug fixes and improvements
 - Documentation enhancements
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
-- [Fastfetch Team](https://github.com/fastfetch-cli/fastfetch) - For creating an amazing system information tool
-- Linux Community - For continuous feedback and testing
-- All contributors who help improve this installer
+- [Fastfetch Team](https://github.com/fastfetch-cli/fastfetch) - For creating the system information tool
+- Linux community - For feedback and testing
+- Contributors who help improve this installer
 
-## 🔗 Links
+## Links
 
 - **Fastfetch Repository**: https://github.com/fastfetch-cli/fastfetch
 - **Report Issues**: https://github.com/ValkyrieNexus/fastfetch-universal-installer/issues
 - **Latest Releases**: https://github.com/ValkyrieNexus/fastfetch-universal-installer/releases
-
----
-
-<div align="center">
-
-**⭐ If this project helped you, please consider giving it a star! ⭐**
-
-Made with ❤️ for the Linux community
-
-</div>
